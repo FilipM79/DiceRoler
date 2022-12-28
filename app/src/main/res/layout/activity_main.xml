@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_Dice5"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_Dice6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_Dice3"
+        tools:srcCompat="@drawable/dice_5" />
+
+    <ImageView
+        android:id="@+id/iv_Dice6"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/iv_Dice5"
+        app:layout_constraintTop_toBottomOf="@+id/iv_Dice4"
+        tools:srcCompat="@drawable/dice_6" />
+
+    <ImageView
+        android:id="@+id/iv_Dice3"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_Dice4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_Dice1"
+        tools:srcCompat="@drawable/dice_3" />
+
+    <ImageView
+        android:id="@+id/iv_Dice4"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/iv_Dice3"
+        app:layout_constraintTop_toBottomOf="@+id/iv_Dice2"
+        tools:srcCompat="@drawable/dice_4" />
+
+    <ImageView
+        android:id="@+id/iv_Dice1"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_Dice2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/dice_1" />
+
+    <ImageView
+        android:id="@+id/iv_Dice2"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/iv_Dice1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/dice_2" />
+
+    <Button
+        android:id="@+id/btn_Roll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/roll"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_Dice5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
